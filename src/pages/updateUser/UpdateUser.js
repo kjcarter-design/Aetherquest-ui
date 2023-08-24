@@ -6,7 +6,7 @@ import Alert from 'react-bootstrap/Alert';
 
 import Header from "../../components/header/Header";
 
-import UserForm from "../../components/userForm/UserForm";
+import UserForm from "../../components/forms/userForm/UserForm";
 
 class UpdateUser extends Component {
 
