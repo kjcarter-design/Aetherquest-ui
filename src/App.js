@@ -6,10 +6,12 @@ import Login from "./pages/login/Login";
 import NotFound from "./pages/notFound/NotFound";
 import Register from "./pages/register/Register";
 import UpdateUser from "./pages/updateUser/UpdateUser";
+import { UserProvider } from './contexts/UserContext';
 
 function App() {
   return (
-    <div className="App">
+    <UserProvider>
+      <div className="App">
       <Switch>
         <Route
           exact
@@ -43,6 +45,8 @@ function App() {
         />
       </Switch>
     </div>
+    </UserProvider>
+    
   );
 }
 
